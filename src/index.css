@@ -14,17 +14,17 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 section[id] { scroll-margin-top: 96px; }
 .festival-shell { min-height: 100vh; position: relative; overflow: hidden; background: radial-gradient(circle at 50% 33%, #6e231d 0%, #3a0f14 28%, #20070b 72%, #130507 100%); }
 .festival-shell:before { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(255,213,133,.055) 1px, transparent 1px), linear-gradient(rgba(255,213,133,.035) 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient(to bottom, #000, transparent 62%); }
-.topbar { height: 72px; display: flex; align-items: center; gap: 14px; padding: 0 4vw; position: relative; z-index: 10; border-bottom: 1px solid rgba(244,203,123,.18); background: rgba(25,5,8,.25); backdrop-filter: blur(12px); }
+.topbar { min-height: 72px; display: flex; align-items: center; gap: clamp(12px, 2.5vw, 32px); padding: 10px clamp(16px, 4vw, 56px); position: relative; z-index: 10; border-bottom: 1px solid rgba(244,203,123,.18); background: rgba(25,5,8,.25); backdrop-filter: blur(12px); }
 .brand-mark, .footer-brand { display: flex; gap: 12px; align-items: center; }
-.brand-mark { min-width: 0; flex: 0 1 auto; }
+.brand-mark { min-width: 180px; flex: 0 1 280px; }
 .brand-mark > div { min-width: 0; }
 .brand-mark strong { font: 700 13px/1.05 'Cormorant Garamond', serif; letter-spacing: .18em; color: #f8d17e; display: block; white-space: normal; overflow-wrap: break-word; }
 .brand-mark small { font-size: 7px; line-height: 1.15; letter-spacing: .16em; color: #d8a982; display: block; margin-top: 3px; white-space: normal; overflow-wrap: break-word; }
 .brand-seal { flex: 0 0 30px; width: 30px; height: 30px; display: grid; place-items: center; color: #3b0e11; background: #d9ae61; font: 600 20px 'Noto Serif SC', serif; border-radius: 3px; box-shadow: 0 0 0 1px #f4d799, 0 0 0 4px rgba(218,174,97,.16); }
-.topbar nav { display: flex; gap: 26px; flex: 1 1 0; justify-content: center; min-width: 0; }
+.topbar nav { display: flex; gap: clamp(18px, 3vw, 42px); flex: 1 1 auto; justify-content: center; min-width: 180px; }
 .topbar nav a, .icon-button, .ghost-button, .profile-pill { color: #ead4b0; font-size: 11px; letter-spacing: .12em; text-decoration: none; background: none; border: 0; transition: .25s ease; }
 .topbar nav a:hover, .icon-button:hover, .ghost-button:hover { color: #ffd27b; }
-.top-actions { display: flex; align-items: center; gap: 7px; flex: 0 1 auto; min-width: 0; }
+.top-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex: 0 1 280px; min-width: 150px; }
 .icon-button { display: flex; gap: 7px; align-items: center; color: #c9a783; font-size: 10px; white-space: nowrap; flex-shrink: 0; }
 .ghost-button, .profile-pill { border: 1px solid rgba(246,209,132,.55); padding: 9px 11px; display: flex; align-items: center; gap: 6px; }
 .profile-pill { color: #ffe8b2; border-color: #ad713d; }
@@ -76,7 +76,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
   .hero-copy > p { font-size: 11px; letter-spacing: .35em; }
   .hero-subtitle { font-size: 15px; }
   .hero-actions { flex-direction: column; gap: 18px; }
-  .topbar { height: 64px; padding: 0 3vw; gap: 8px; }
+  .topbar { min-height: 64px; padding: 8px 3vw; gap: 10px; }
   .topbar nav { display: none; position: absolute; top: 96px; left: 0; right: 0; flex-direction: column; gap: 0; margin-left: 0; background: rgba(25,5,8,.95); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(244,203,123,.18); padding: 8px 5vw 16px; z-index: 15; }
   .topbar nav.nav-open { display: flex; }
   .topbar nav a { padding: 12px 0; border-bottom: 1px solid rgba(244,203,123,.08); font-size: 13px; }
@@ -99,9 +99,10 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
   .profile-avatar-wrap { width: 100px; height: 100px; }
 }
 @media (max-width: 480px) {
-  .topbar { height: 56px; padding: 0 2.5vw; gap: 5px; }
+  .topbar { min-height: 56px; padding: 7px 2.5vw; gap: 6px; }
   .topbar nav { top: 60px; }
-  .brand-mark { gap: 6px; }
+  .brand-mark { min-width: 0; flex: 1 1 auto; gap: 6px; }
+  .top-actions { flex: 0 0 auto; gap: 5px; }
   .brand-mark strong { font-size: 9px; letter-spacing: .12em; line-height: 1.05; }
   .brand-mark small { font-size: 5px; letter-spacing: .08em; line-height: 1.1; }
   .brand-seal { flex-basis: 24px; width: 24px; height: 24px; font-size: 14px; }
