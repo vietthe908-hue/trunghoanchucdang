@@ -337,7 +337,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
 .greeting-lock-label input::placeholder { color: #8a6b55; }
 
 /* ===== Greeting moon — small, behind the lotus ===== */
-.greeting-moon { position: absolute; top: 10%; left: 50%; transform: translateX(-50%); width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle at 36% 34%, #f5edd6 0%, #e8d5ad 38%, #d4be88 66%, #c4a868 88%, #b8985a 100%); opacity: .22; box-shadow: 0 0 60px 10px rgba(255,200,110,.1), inset -14px -22px 42px rgba(170,115,50,.12), inset 8px 10px 22px rgba(255,250,235,.1); z-index: 1; }
+.greeting-moon { position: absolute; top: 8%; left: 50%; transform: translateX(-50%); width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle at 36% 34%, #f5edd6 0%, #e8d5ad 38%, #d4be88 66%, #c4a868 88%, #b8985a 100%); opacity: .18; box-shadow: 0 0 50px 8px rgba(255,200,110,.08), inset -10px -16px 32px rgba(170,115,50,.1), inset 6px 8px 18px rgba(255,250,235,.08); z-index: 1; }
 
 /* ===== Giant red-gold lotus lantern with jade pendant ===== */
 .greeting-lantern-unit { position: absolute; top: 42%; left: 50%; transform: translate(-50%, -50%); z-index: 6; display: flex; flex-direction: column; align-items: center; pointer-events: none; animation: lanternSway 6s infinite ease-in-out; }
@@ -424,7 +424,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
 @keyframes sparkleSpread { 0% { transform: rotate(var(--a, 0deg)) translateY(0); opacity: 0; } 10% { opacity: 1; } 45% { opacity: .8; } 100% { transform: rotate(var(--a, 0deg)) translateY(-48px); opacity: 0; } }
 
 /* ===== Card frame — compact, positioned near lantern bottom ===== */
-.greeting-card-frame { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 10; width: min(240px, 82vw); padding: 12px 16px 10px; background: linear-gradient(180deg, rgba(35,10,14,.88), rgba(22,6,9,.85)); backdrop-filter: blur(14px); border: 1px solid rgba(244,194,107,.3); box-shadow: 0 8px 28px rgba(0,0,0,.45), 0 0 20px rgba(244,194,107,.04); cursor: pointer; transition: .25s ease; animation: framePulse 3s infinite ease-in-out; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.greeting-card-frame { position: fixed; bottom: 60px; left: 50%; transform: translateX(-50%); z-index: 10; width: min(240px, 82vw); padding: 12px 16px 10px; background: linear-gradient(180deg, rgba(35,10,14,.88), rgba(22,6,9,.85)); backdrop-filter: blur(14px); border: 1px solid rgba(244,194,107,.3); box-shadow: 0 8px 28px rgba(0,0,0,.45), 0 0 20px rgba(244,194,107,.04); cursor: pointer; transition: .25s ease; animation: framePulse 3s infinite ease-in-out; display: flex; flex-direction: column; align-items: center; gap: 5px; }
 .greeting-card-frame:hover { border-color: rgba(244,194,107,.55); box-shadow: 0 12px 36px rgba(0,0,0,.5), 0 0 28px rgba(244,194,107,.1); transform: translateX(-50%) translateY(-2px); }
 .greeting-card-frame-corner { position: absolute; width: 9px; height: 9px; border: 1px solid rgba(244,194,107,.35); }
 .greeting-card-frame-corner-tl { top: 5px; left: 5px; border-right: 0; border-bottom: 0; }
@@ -473,15 +473,15 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
 
 /* ===== Greeting responsive ===== */
 @media (max-width: 768px) {
-  .greeting-moon { width: 130px; height: 130px; top: 7%; opacity: .18; }
-  .greeting-lantern-unit { top: 38%; }
-  .lantern-lotus-body { width: 460px; height: 300px; }
-  .lantern-core { width: 120px; height: 120px; bottom: 66px; }
-  .lp-outer { width: 105px; height: 180px; }
-  .lp-mid { width: 88px; height: 145px; }
-  .lp-inner { width: 70px; height: 110px; }
-  .lp-bottom { width: 96px; height: 110px; }
-  .lantern-calyx-base { width: 90px; height: 30px; }
+  .greeting-moon { width: 100px; height: 100px; top: 6%; opacity: .15; }
+  .greeting-lantern-unit { top: 40%; }
+  .lantern-lotus-body { width: 520px; height: 340px; }
+  .lantern-core { width: 140px; height: 140px; bottom: 74px; }
+  .lp-outer { width: 120px; height: 205px; }
+  .lp-mid { width: 100px; height: 165px; }
+  .lp-inner { width: 80px; height: 125px; }
+  .lp-bottom { width: 108px; height: 125px; }
+  .lantern-calyx-base { width: 100px; height: 32px; }
   .calyx-ruby-inlay { width: 46px; height: 5px; }
   .calyx-hooks-row { width: 58px; }
   .gold-hook { width: 5px; height: 5px; }
@@ -500,7 +500,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
   .greeting-lock-panel { padding: 32px 24px; }
   .greeting-lock-title { font-size: 36px; }
   .greeting-lock-intro { font-size: 13px; }
-  .greeting-card-frame { width: min(210px, 84vw); bottom: 20px; padding: 10px 14px 9px; }
+  .greeting-card-frame { width: min(210px, 84vw); bottom: 50px; padding: 10px 14px 9px; }
   .greeting-card-frame-header { font-size: 10px; }
   .greeting-wish-ornament-top::after, .greeting-wish-ornament-bottom::before { font-size: 12px; }
   .greeting-wish-ornament-top::before, .greeting-wish-ornament-top::after, .greeting-wish-ornament-bottom::after { width: 40px; }
@@ -508,15 +508,15 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
   .greeting-wish-card-large { transform: translateY(-12px); }
 }
 @media (max-width: 400px) {
-  .greeting-moon { width: 90px; height: 90px; top: 5%; }
-  .greeting-lantern-unit { top: 36%; }
-  .lantern-lotus-body { width: 340px; height: 220px; }
-  .lantern-core { width: 90px; height: 90px; bottom: 52px; }
-  .lp-outer { width: 80px; height: 135px; }
-  .lp-mid { width: 66px; height: 108px; }
-  .lp-inner { width: 52px; height: 82px; }
-  .lp-bottom { width: 72px; height: 82px; }
-  .lantern-calyx-base { width: 70px; height: 24px; }
+  .greeting-moon { width: 70px; height: 70px; top: 4%; }
+  .greeting-lantern-unit { top: 38%; }
+  .lantern-lotus-body { width: 400px; height: 260px; }
+  .lantern-core { width: 110px; height: 110px; bottom: 58px; }
+  .lp-outer { width: 95px; height: 160px; }
+  .lp-mid { width: 78px; height: 128px; }
+  .lp-inner { width: 62px; height: 96px; }
+  .lp-bottom { width: 86px; height: 96px; }
+  .lantern-calyx-base { width: 80px; height: 26px; }
   .calyx-ruby-inlay { width: 36px; height: 4px; }
   .calyx-hooks-row { width: 46px; }
   .gold-hook { width: 4px; height: 4px; }
