@@ -177,7 +177,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
 .admin-back { display: flex; align-items: center; gap: 8px; border: 1px solid rgba(246,209,132,.4); background: none; color: #ead4b0; padding: 9px 14px; font-size: 10px; letter-spacing: .1em; transition: .25s ease; }
 .admin-back:hover { color: #ffd27b; border-color: #f4d799; }
 .admin-tabs { display: flex; gap: 0; padding: 0 clamp(16px, 4vw, 56px); border-bottom: 1px solid rgba(239,190,107,.12); background: #1b0709; }
-.admin-tabs button { display: flex; align-items: center; gap: 8px; border: 0; border-bottom: 2px solid transparent; background: none; color: #a57d68; font-size: 11px; letter-spacing: .1em; padding: 16px 22px; transition: .25s ease; }
+.admin-tabs button { display: flex; align-items: center; gap: 8px; border: 0; border-bottom: 2px solid transparent; background: none; color: #a57d68; font-size: 12px; letter-spacing: .08em; padding: 18px 28px; transition: .25s ease; flex: 1 1 0; justify-content: center; white-space: nowrap; }
 .admin-tabs button:hover { color: #d7b98e; }
 .admin-tabs button.active { color: #ffd27b; border-bottom-color: #e8bc67; }
 .admin-badge { background: #c0392b; color: #fff; font-size: 10px; padding: 1px 7px; border-radius: 10px; }
@@ -222,9 +222,8 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
   .admin-brand { min-width: 0; gap: 8px; }
   .admin-brand strong { font-size: 11px; letter-spacing: .12em; } .admin-brand small { font-size: 6px; letter-spacing: .12em; }
   .admin-back { flex: 0 0 auto; padding: 7px 9px; font-size: 8px; }
-  .admin-tabs { overflow-x: auto; padding: 0 10px; scrollbar-width: none; }
-  .admin-tabs::-webkit-scrollbar { display: none; }
-  .admin-tabs button { flex: 0 0 auto; padding: 12px 10px; font-size: 10px; gap: 5px; }
+  .admin-tabs { padding: 0 8px; }
+  .admin-tabs button { padding: 14px 10px; font-size: 11px; gap: 6px; }
   .admin-body { width: calc(100% - 24px); padding: 16px 0 32px; }
   .admin-stats { grid-template-columns: 1fr; gap: 8px; margin-bottom: 16px; }
   .stat-card { padding: 14px 16px; }
@@ -239,6 +238,10 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
   .mini-btn { padding: 6px 8px; font-size: 9px; gap: 4px; }
   .row-avatar { width: 24px; height: 24px; flex: 0 0 24px; }
   .admin-edit-panel { width: 100%; }
+}
+@media (max-width: 380px) {
+  .admin-tabs button { padding: 12px 6px; font-size: 10px; gap: 4px; }
+  .admin-tabs button svg { width: 13px; height: 13px; }
 }
 .admin-table.cols-4 th:nth-child(1), .admin-table.cols-4 td:nth-child(1) { width: 30%; }
 .admin-table.cols-4 th:nth-child(2), .admin-table.cols-4 td:nth-child(2) { width: 34%; }
