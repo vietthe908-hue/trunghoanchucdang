@@ -80,7 +80,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
   .topbar nav { display: none; position: absolute; top: 96px; left: 0; right: 0; flex-direction: column; gap: 0; margin-left: 0; background: rgba(25,5,8,.95); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(244,203,123,.18); padding: 8px 5vw 16px; z-index: 15; }
   .topbar nav.nav-open { display: flex; }
   .topbar nav a { padding: 12px 0; border-bottom: 1px solid rgba(244,203,123,.08); font-size: 13px; }
-  .top-actions { gap: 6px; }
+  .top-actions { gap: 6px; flex-shrink: 1; min-width: 0; overflow: visible; }
   .nav-toggle { display: flex; flex-shrink: 0; order: 99; }
   .icon-button span { display: none; }
   .icon-button { padding: 8px; flex-shrink: 0; }
@@ -217,7 +217,29 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
 .admin-edit-panel select { width: 100%; color: #fff0ca; border: 1px solid rgba(218,161,91,.35); background: rgba(10,2,4,.5); outline: none; padding: 13px 14px; font-size: 13px; }
 .admin-edit-panel select:focus { border-color: #e4ad5c; }
 .admin-toast { position: fixed; z-index: 40; bottom: 25px; left: 50%; transform: translateX(-50%); color: #32100d; background: #f2d18a; padding: 12px 18px; font-size: 12px; display: flex; align-items: center; gap: 8px; box-shadow: 0 10px 32px rgba(0,0,0,.35); animation: toastIn .35s ease; }
-@media (max-width: 620px) { .admin-stats { flex-direction: column; } .stat-card { min-width: 100%; } .admin-tabs { padding: 0 2vw; } .admin-tabs button { padding: 14px 14px; font-size: 10px; } .admin-body { padding: 20px 2vw; } }
+@media (max-width: 620px) {
+  .admin-stats { flex-direction: column; } .stat-card { min-width: 100%; padding: 16px 18px; }
+  .stat-card strong { font-size: 28px; }
+  .admin-tabs { padding: 0 2vw; } .admin-tabs button { padding: 14px 12px; font-size: 10px; gap: 6px; }
+  .admin-body { padding: 16px 3vw; }
+  .admin-topbar { height: auto; flex-direction: column; align-items: stretch; gap: 10px; padding: 12px 4vw; }
+  .admin-brand strong { font-size: 12px; } .admin-brand small { font-size: 7px; }
+  .admin-back { align-self: flex-start; padding: 7px 12px; font-size: 9px; }
+  .admin-table { min-width: 0; }
+  .admin-table th { padding: 10px 10px; font-size: 8px; }
+  .admin-table td { padding: 10px 10px; font-size: 12px; }
+  .cell-wish { max-width: 120px; font-size: 12px; }
+  .cell-email { font-size: 11px; }
+  .mini-btn { padding: 5px 8px; font-size: 8px; gap: 4px; }
+  .row-avatar { width: 24px; height: 24px; }
+  .admin-edit-panel { width: 100%; }
+}
+@media (max-width: 480px) {
+  .admin-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .admin-table { min-width: 500px; }
+  .cell-wish { max-width: 90px; }
+  .admin-tabs button { padding: 12px 8px; font-size: 9px; }
+}
 
 /* ===== Ritual choice buttons ===== */
 .ritual-choice-buttons { display: flex; gap: 14px; margin-top: 10px; flex-wrap: wrap; }
