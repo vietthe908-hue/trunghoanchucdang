@@ -206,7 +206,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
 .status-pending { background: rgba(240,160,64,.18); color: #f0a040; border: 1px solid rgba(240,160,64,.3); }
 .status-approved { background: rgba(80,160,80,.15); color: #7bc97b; border: 1px solid rgba(80,160,80,.3); }
 .status-rejected { background: rgba(192,57,43,.15); color: #e57373; border: 1px solid rgba(192,57,43,.3); }
-.role-pill { font-size: 9px; letter-spacing: .08em; padding: 3px 9px; border-radius: 3px; }
+.role-pill { font-size: 10px; letter-spacing: .08em; padding: 4px 10px; border-radius: 3px; white-space: nowrap; display: inline-block; }
 .role-member { background: rgba(218,161,91,.12); color: #c9a373; }
 .role-admin { background: rgba(180,80,30,.25); color: #f0a040; border: 1px solid rgba(240,160,64,.3); }
 .mini-btn { display: flex; align-items: center; gap: 5px; border: 1px solid rgba(218,161,91,.25); background: none; color: #c9a373; font-size: 9px; letter-spacing: .06em; padding: 6px 10px; transition: .2s ease; }
@@ -250,7 +250,7 @@ footer { position: relative; z-index: 3; background: #150508; padding: 27px 8vw;
 }
 .admin-table.cols-4 th:nth-child(1), .admin-table.cols-4 td:nth-child(1) { width: 28%; }
 .admin-table.cols-4 th:nth-child(2), .admin-table.cols-4 td:nth-child(2) { width: 32%; }
-.admin-table.cols-4 th:nth-child(3), .admin-table.cols-4 td:nth-child(3) { width: 16%; }
+.admin-table.cols-4 th:nth-child(3), .admin-table.cols-4 td:nth-child(3) { width: 18%; }
 .admin-table.cols-4 th:nth-child(4), .admin-table.cols-4 td:nth-child(4) { width: 24%; }
 .admin-table.cols-5 th:nth-child(1), .admin-table.cols-5 td:nth-child(1) { width: 18%; }
 .admin-table.cols-5 th:nth-child(2), .admin-table.cols-5 td:nth-child(2) { width: 18%; }
