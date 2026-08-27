@@ -93,7 +93,7 @@ function AdminPanel({ onClose }: { onClose: () => void }) {
             <p className="admin-empty">Chưa có thành viên nào ghi danh.</p>
           ) : (
             <div className="admin-table-wrap">
-              <table className="admin-table">
+              <table className="admin-table cols-4">
                 <thead>
                   <tr>
                     <th>Tên OC</th>
@@ -142,7 +142,7 @@ function AdminPanel({ onClose }: { onClose: () => void }) {
             <p className="admin-empty">Chưa có hoa đăng nào được thả.</p>
           ) : (
             <div className="admin-table-wrap">
-              <table className="admin-table">
+              <table className="admin-table cols-5">
                 <thead>
                   <tr>
                     <th>Người thả</th>
