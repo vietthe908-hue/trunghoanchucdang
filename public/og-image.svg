@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="skyGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#3a1820"/>
+      <stop offset="40%" stop-color="#1a0a0e"/>
+      <stop offset="100%" stop-color="#0a0405"/>
+    </radialGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8e0" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#f5d99a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5d99a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mountainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a0a0e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0a0405" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="lanternCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff2ae"/>
+      <stop offset="30%" stop-color="#ffb347"/>
+      <stop offset="70%" stop-color="#e46e2d"/>
+      <stop offset="100%" stop-color="#8a2c1a" stop-opacity="0.6"/>
+    </radialGradient>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9a3c" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff9a3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fwRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff5252" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff5252" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fwGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fwOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9a3c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff9a3c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffdca3"/>
+      <stop offset="50%" stop-color="#ff9a3c"/>
+      <stop offset="100%" stop-color="#b94c28"/>
+    </linearGradient>
+    <linearGradient id="sealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8bc67"/>
+      <stop offset="100%" stop-color="#b8843a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Night sky background -->
+  <rect width="1200" height="630" fill="url(#skyGrad)"/>
+
+  <!-- Stars -->
+  <g fill="#fff8e0" opacity="0.7">
+    <circle cx="50" cy="80" r="1.5"/>
+    <circle cx="120" cy="40" r="1"/>
+    <circle cx="200" cy="90" r="1.2"/>
+    <circle cx="280" cy="50" r="0.8"/>
+    <circle cx="350" cy="110" r="1.5"/>
+    <circle cx="420" cy="30" r="1"/>
+    <circle cx="490" cy="70" r="1.2"/>
+    <circle cx="560" cy="100" r="0.8"/>
+    <circle cx="630" cy="40" r="1"/>
+    <circle cx="700" cy="90" r="1.5"/>
+    <circle cx="770" cy="50" r="0.8"/>
+    <circle cx="840" cy="110" r="1"/>
+    <circle cx="910" cy="30" r="1.2"/>
+    <circle cx="980" cy="80" r="0.8"/>
+    <circle cx="1050" cy="50" r="1.5"/>
+    <circle cx="1120" cy="100" r="1"/>
+    <circle cx="80" cy="160" r="1"/>
+    <circle cx="240" cy="180" r="0.8"/>
+    <circle cx="400" cy="160" r="1.2"/>
+    <circle cx="560" cy="180" r="0.8"/>
+    <circle cx="720" cy="160" r="1"/>
+    <circle cx="880" cy="180" r="1.2"/>
+    <circle cx="1040" cy="160" r="0.8"/>
+    <circle cx="150" cy="240" r="0.8"/>
+    <circle cx="350" cy="250" r="1"/>
+    <circle cx="650" cy="240" r="0.8"/>
+    <circle cx="950" cy="250" r="1"/>
+    <circle cx="30" cy="300" r="1"/>
+    <circle cx="300" cy="320" r="0.8"/>
+    <circle cx="600" cy="310" r="1"/>
+    <circle cx="900" cy="320" r="0.8"/>
+    <circle cx="1100" cy="300" r="1"/>
+  </g>
+
+  <!-- Twinkling stars (slightly larger) -->
+  <g fill="#fff8e0" opacity="0.9">
+    <circle cx="180" cy="120" r="2"/>
+    <circle cx="450" cy="140" r="2.5"/>
+    <circle cx="750" cy="120" r="2"/>
+    <circle cx="1020" cy="140" r="2.5"/>
+    <circle cx="270" cy="220" r="2"/>
+    <circle cx="570" cy="220" r="2"/>
+    <circle cx="870" cy="220" r="2.5"/>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="950" cy="120" r="80" fill="url(#moonGlow)"/>
+  <circle cx="950" cy="120" r="45" fill="#fff8e0" opacity="0.95"/>
+  <circle cx="935" cy="105" r="6" fill="#e8d5a0" opacity="0.4"/>
+  <circle cx="965" cy="130" r="4" fill="#e8d5a0" opacity="0.3"/>
+  <circle cx="955" cy="115" r="3" fill="#e8d5a0" opacity="0.3"/>
+
+  <!-- Mountains silhouette -->
+  <path d="M0,630 L0,480 L80,420 L180,450 L280,390 L380,430 L480,370 L580,410 L680,380 L780,420 L880,390 L980,430 L1080,400 L1200,440 L1200,630 Z" fill="url(#mountainGrad)"/>
+  <path d="M0,630 L0,530 L100,490 L220,510 L340,470 L460,500 L580,460 L700,490 L820,470 L940,500 L1060,480 L1200,510 L1200,630 Z" fill="#0a0405" opacity="0.9"/>
+
+  <!-- Floating sky lanterns (small, background) -->
+  <g opacity="0.6">
+    <ellipse cx="100" cy="350" rx="12" ry="16" fill="#ff9a3c" opacity="0.5"/>
+    <ellipse cx="250" cy="300" rx="10" ry="14" fill="#ffb347" opacity="0.4"/>
+    <ellipse cx="400" cy="380" rx="11" ry="15" fill="#ff9a3c" opacity="0.5"/>
+    <ellipse cx="550" cy="320" rx="9" ry="13" fill="#ffd700" opacity="0.4"/>
+    <ellipse cx="700" cy="360" rx="12" ry="16" fill="#ff9a3c" opacity="0.5"/>
+    <ellipse cx="850" cy="310" rx="10" ry="14" fill="#ffb347" opacity="0.4"/>
+    <ellipse cx="1050" cy="350" rx="11" ry="15" fill="#ff9a3c" opacity="0.5"/>
+  </g>
+
+  <!-- Fireworks -->
+  <!-- Firework 1 - red -->
+  <g transform="translate(200, 180)">
+    <circle cx="0" cy="0" r="60" fill="url(#fwRed)" opacity="0.3"/>
+    <g stroke="#ff5252" stroke-width="1.5" opacity="0.7" fill="none">
+      <line x1="0" y1="0" x2="0" y2="-40"/>
+      <line x1="0" y1="0" x2="28" y2="-28"/>
+      <line x1="0" y1="0" x2="40" y2="0"/>
+      <line x1="0" y1="0" x2="28" y2="28"/>
+      <line x1="0" y1="0" x2="0" y2="40"/>
+      <line x1="0" y1="0" x2="-28" y2="28"/>
+      <line x1="0" y1="0" x2="-40" y2="0"/>
+      <line x1="0" y1="0" x2="-28" y2="-28"/>
+    </g>
+    <g fill="#ff5252" opacity="0.8">
+      <circle cx="0" cy="-40" r="2"/>
+      <circle cx="28" cy="-28" r="2"/>
+      <circle cx="40" cy="0" r="2"/>
+      <circle cx="28" cy="28" r="2"/>
+      <circle cx="0" cy="40" r="2"/>
+      <circle cx="-28" cy="28" r="2"/>
+      <circle cx="-40" cy="0" r="2"/>
+      <circle cx="-28" cy="-28" r="2"/>
+    </g>
+  </g>
+
+  <!-- Firework 2 - gold -->
+  <g transform="translate(500, 150)">
+    <circle cx="0" cy="0" r="50" fill="url(#fwGold)" opacity="0.3"/>
+    <g stroke="#ffd700" stroke-width="1.5" opacity="0.7" fill="none">
+      <line x1="0" y1="0" x2="0" y2="-35"/>
+      <line x1="0" y1="0" x2="25" y2="-25"/>
+      <line x1="0" y1="0" x2="35" y2="0"/>
+      <line x1="0" y1="0" x2="25" y2="25"/>
+      <line x1="0" y1="0" x2="0" y2="35"/>
+      <line x1="0" y1="0" x2="-25" y2="25"/>
+      <line x1="0" y1="0" x2="-35" y2="0"/>
+      <line x1="0" y1="0" x2="-25" y2="-25"/>
+    </g>
+    <g fill="#ffd700" opacity="0.8">
+      <circle cx="0" cy="-35" r="1.5"/>
+      <circle cx="25" cy="-25" r="1.5"/>
+      <circle cx="35" cy="0" r="1.5"/>
+      <circle cx="25" cy="25" r="1.5"/>
+      <circle cx="0" cy="35" r="1.5"/>
+      <circle cx="-25" cy="25" r="1.5"/>
+      <circle cx="-35" cy="0" r="1.5"/>
+      <circle cx="-25" cy="-25" r="1.5"/>
+    </g>
+  </g>
+
+  <!-- Firework 3 - orange -->
+  <g transform="translate(800, 200)">
+    <circle cx="0" cy="0" r="45" fill="url(#fwOrange)" opacity="0.3"/>
+    <g stroke="#ff9a3c" stroke-width="1.5" opacity="0.6" fill="none">
+      <line x1="0" y1="0" x2="0" y2="-30"/>
+      <line x1="0" y1="0" x2="21" y2="-21"/>
+      <line x1="0" y1="0" x2="30" y2="0"/>
+      <line x1="0" y1="0" x2="21" y2="21"/>
+      <line x1="0" y1="0" x2="0" y2="30"/>
+      <line x1="0" y1="0" x2="-21" y2="21"/>
+      <line x1="0" y1="0" x2="-30" y2="0"/>
+      <line x1="0" y1="0" x2="-21" y2="-21"/>
+    </g>
+  </g>
+
+  <!-- Central giant lotus lantern -->
+  <g transform="translate(600, 400)">
+    <!-- Glow -->
+    <circle cx="0" cy="0" r="140" fill="url(#lanternGlow)"/>
+
+    <!-- Outer petals -->
+    <ellipse cx="-80" cy="-20" rx="35" ry="60" fill="url(#petalGrad)" opacity="0.7" transform="rotate(-30, -80, -20)"/>
+    <ellipse cx="-50" cy="-50" rx="35" ry="55" fill="url(#petalGrad)" opacity="0.75" transform="rotate(-15, -50, -50)"/>
+    <ellipse cx="0" cy="-60" rx="35" ry="55" fill="url(#petalGrad)" opacity="0.8"/>
+    <ellipse cx="50" cy="-50" rx="35" ry="55" fill="url(#petalGrad)" opacity="0.75" transform="rotate(15, 50, -50)"/>
+    <ellipse cx="80" cy="-20" rx="35" ry="60" fill="url(#petalGrad)" opacity="0.7" transform="rotate(30, 80, -20)"/>
+
+    <!-- Mid petals -->
+    <ellipse cx="-40" cy="-10" rx="28" ry="45" fill="url(#petalGrad)" opacity="0.85" transform="rotate(-20, -40, -10)"/>
+    <ellipse cx="0" cy="-25" rx="28" ry="45" fill="url(#petalGrad)" opacity="0.9"/>
+    <ellipse cx="40" cy="-10" rx="28" ry="45" fill="url(#petalGrad)" opacity="0.85" transform="rotate(20, 40, -10)"/>
+
+    <!-- Inner petals -->
+    <ellipse cx="-18" cy="5" rx="20" ry="35" fill="url(#petalGrad)" opacity="0.95" transform="rotate(-15, -18, 5)"/>
+    <ellipse cx="0" cy="0" rx="20" ry="35" fill="url(#petalGrad)" opacity="1"/>
+    <ellipse cx="18" cy="5" rx="20" ry="35" fill="url(#petalGrad)" opacity="0.95" transform="rotate(15, 18, 5)"/>
+
+    <!-- Core flame -->
+    <circle cx="0" cy="-5" r="22" fill="url(#lanternCore)"/>
+    <circle cx="0" cy="-8" r="12" fill="#fff2ae" opacity="0.8"/>
+    <circle cx="0" cy="-10" r="6" fill="#fff" opacity="0.9"/>
+
+    <!-- Calyx base -->
+    <path d="M-25,30 Q0,50 25,30 L20,45 Q0,55 -20,45 Z" fill="#b8843a" opacity="0.8"/>
+    <circle cx="0" cy="40" r="4" fill="#c44536" opacity="0.7"/>
+
+    <!-- Pearl cascades -->
+    <line x1="-15" y1="45" x2="-15" y2="75" stroke="#e8bc67" stroke-width="0.8" opacity="0.6"/>
+    <line x1="0" y1="50" x2="0" y2="85" stroke="#e8bc67" stroke-width="0.8" opacity="0.6"/>
+    <line x1="15" y1="45" x2="15" y2="75" stroke="#e8bc67" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="-15" cy="75" r="3" fill="#e8bc67" opacity="0.7"/>
+    <circle cx="0" cy="85" r="3.5" fill="#e8bc67" opacity="0.7"/>
+    <circle cx="15" cy="75" r="3" fill="#e8bc67" opacity="0.7"/>
+  </g>
+
+  <!-- Gold dust particles around lantern -->
+  <g fill="#ffd700" opacity="0.5">
+    <circle cx="450" cy="380" r="1.5"/>
+    <circle cx="520" cy="350" r="1"/>
+    <circle cx="680" cy="340" r="1.5"/>
+    <circle cx="750" cy="370" r="1"/>
+    <circle cx="480" cy="430" r="1"/>
+    <circle cx="720" cy="430" r="1.5"/>
+    <circle cx="550" cy="320" r="1"/>
+    <circle cx="650" cy="320" r="1"/>
+  </g>
+
+  <!-- Title text area -->
+  <!-- Seal stamp -->
+  <rect x="80" y="420" width="60" height="60" rx="4" fill="url(#sealGrad)" opacity="0.9"/>
+  <text x="110" y="445" text-anchor="middle" font-family="serif" font-size="28" fill="#2c090b" font-weight="bold">福</text>
+  <text x="110" y="468" text-anchor="middle" font-family="serif" font-size="10" fill="#2c090b" letter-spacing="2">TRÙNG</text>
+
+  <!-- Main title -->
+  <text x="160" y="450" font-family="Georgia, serif" font-size="42" fill="#f5dba4" font-weight="bold" letter-spacing="4">TRÙNG HOAN TÁI</text>
+  <text x="160" y="485" font-family="Georgia, serif" font-size="18" fill="#e8bc67" letter-spacing="6" opacity="0.9">CHÚC ĐĂNG HỘI · ĐÊM NGUYỆN ƯỚC</text>
+
+  <!-- Tagline -->
+  <text x="160" y="525" font-family="Georgia, serif" font-size="14" fill="#a57d68" letter-spacing="2" opacity="0.8">Một lời nguyện thành tâm, gửi theo ánh lửa vượt qua muôn trùng mây nước</text>
+
+  <!-- Bottom mist -->
+  <rect x="0" y="580" width="1200" height="50" fill="#1a0a0e" opacity="0.6"/>
+  <rect x="0" y="600" width="1200" height="30" fill="#0a0405" opacity="0.8"/>
+</svg>
